@@ -1,52 +1,29 @@
-# AI-Based Network Intrusion Detection System (NIDS)
+# AI Network Intrusion Detection System
 
-This project is a basic Network Intrusion Detection System developed using Python and Scapy. 
-It monitors network traffic in real time and detects suspicious activities.
+This project is a Python-based Network Intrusion Detection System (NIDS) that monitors network traffic and detects suspicious activities such as intrusion attempts and port scanning.
 
 ## Features
-
-- Real-time packet sniffing
-- IP traffic monitoring
-- Intrusion detection based on packet count
-- Suspicious port monitoring
-- Alert logging
+- Packet sniffing using Scapy
+- Intrusion detection based on traffic threshold
+- Port scan detection
+- Suspicious activity logging
+- Real-time network monitoring
 
 ## Technologies Used
-
 - Python
 - Scapy
 - Networking concepts (TCP/IP)
 
-## Project Structure
+## How to Run the Project
 
-NIDS_Project
-│
-├── packet_sniffer.py
-├── intrusion_detector.py
-├── port_monitor.py
-├── log.txt
-└── README.md
+1. Navigate to the project folder:
 
-## How to Run
+cd NIDS_Project
 
-1. Install required library:
+2. Activate virtual environment:
 
-pip install scapy
+.venv\Scripts\activate
 
-2. Run packet sniffer:
+3. Run the main IDS program:
 
-python packet_sniffer.py
-
-3. Run intrusion detection:
-
-python intrusion_detector.py
-
-4. Run port monitoring:
-
-python port_monitor.py
-
-## Future Improvements
-
-- Machine learning based attack detection
-- DDoS attack detection
-- Visualization dashboard
+python main_nids.py
